@@ -16,12 +16,13 @@ return new class extends Migration
             $table->string('image')->default('uploads/images/image.png')->nullable();
             $table->string('name');
             $table->string('phone')->unique()->nullable();
-            $table->boolean('status')->default(1);
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('verification_code')->nullable();
-            $table->timestamp('verification_code_expires_at')->nullable();
+            $table->date('birth_date')->nullable();
+            $table->boolean('status')->default(1);
+            $table->decimal('wallet_balance', 12, 2)->default(0);
+            $table->integer('points_balance')->default(0);
+            $table->string('fcm_token')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

@@ -31,10 +31,9 @@ class User extends Authenticatable
         'verification_code',
         'verification_code_expires_at',
         'email_verified_at',
-        // 'registration_step', // No longer needed - commented out
-        'access_code',
-        'member_id',
-        'first_login',
+        'wallet_balance',
+        'points_balance',
+        'fcm_token',
     ];
 
     /**
@@ -64,68 +63,5 @@ class User extends Authenticatable
         ];
     }
 
-    public function propertyMembers()
-    {
-        return $this->hasMany(PropertyMember::class);
-    }
 
-    public function unitAssignments()
-    {
-        return $this->hasMany(UnitAssignment::class);
-    }
-
-    public function properties()
-    {
-        return $this->belongsToMany(Property::class, 'property_members')
-            ->withPivot('role_id', 'is_active')
-            ->withTimestamps();
-    }
-
-    // /**
-    //  * Check if user has completed registration
-    //  */
-    // public function hasCompletedRegistration(): bool
-    // {
-    //     return $this->registration_step === 'completed';
-    // }
-
-    // /**
-    //  * Check if user has created a property
-    //  */
-    // public function hasProperty(): bool
-    // {
-    //     return in_array($this->registration_step, [
-    //         'property_created',
-    //         'attachments_uploaded',
-    //         'building_added',
-    //         'completed'
-    //     ]);
-    // }
-
-    /**
-     * Get user's active property
-     */
-    public function getActiveProperty()
-    {
-        return $this->properties()
-            ->wherePivot('is_active', true)
-            ->first();
-    }
-
-    // /**
-    //  * Update registration step
-    //  */
-    // public function updateRegistrationStep(string $step): void
-    // {
-    //     $this->update(['registration_step' => $step]);
-    // }
-
-    // /**
-    //  * Registration steps constants
-    //  */
-    // const STEP_REGISTERED = 'registered';
-    // const STEP_PROPERTY_CREATED = 'property_created';
-    // const STEP_ATTACHMENTS_UPLOADED = 'attachments_uploaded';
-    // const STEP_BUILDING_ADDED = 'building_added';
-    // const STEP_COMPLETED = 'completed';
 }

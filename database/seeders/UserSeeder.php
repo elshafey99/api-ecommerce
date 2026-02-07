@@ -14,11 +14,10 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         User::create([
-            'image'                =>'uploads/images/image.png',
+            'image'                => 'uploads/images/image.png',
             'name'                 => 'User',
             'email'                => 'user@gmail.com',
             'phone'                => '1234567890',
-            'email_verified_at'    => now(),
             'password'             => bcrypt('password'),
         ]);
     }

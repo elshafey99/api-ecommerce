@@ -18,6 +18,10 @@ class DatabaseSeeder extends Seeder
             AdminSeeder::class,
             SettingsSeeder::class,
             UserSeeder::class,
+            BrandSeeder::class,
+            CategorySeeder::class,
+            PaymentMethodSeeder::class,
+            PageSeeder::class,
         ]);
     }
 }
