@@ -45,6 +45,17 @@
                 </li>
             @endcan
 
+            @can('branches')
+                <li class="nav-item @yield('branches-active')">
+                    <a class="d-flex align-items-center" href="{{ route('dashboard.branches.index') }}">
+                        <i data-feather='map-pin'></i>
+                        <span class="menu-title text-truncate">{{ __('dashboard.branches') }}</span>
+                        <span
+                            class="badge badge-light-danger rounded-pill ms-auto me-1">{{ App\Models\Branch::count() }}</span>
+                    </a>
+                </li>
+            @endcan
+
             @can('brands')
                 <li class="nav-item @yield('brands-active')">
                     <a class="d-flex align-items-center" href="{{ route('dashboard.brands.index') }}">
@@ -66,6 +77,8 @@
                     </a>
                 </li>
             @endcan
+
+
 
             {{-- @can('users')
                 <li class="nav-item @yield('users-open') @yield('createUser-open')"><a class="d-flex align-items-center"

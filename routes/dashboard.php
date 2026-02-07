@@ -71,6 +71,12 @@ Route::group([
         })->middleware('can:categories')->name('categories.index');
         ############################### End Categories Routes ############################################
 
+        ############################### Branches Routes ############################################
+        Route::get('branches', function () {
+            return view('dashboard.branches.index');
+        })->middleware('can:branches')->name('branches.index');
+        ############################### End Branches Routes ############################################
+
         ############################### Admin Routes ############################################
         Route::get('admins', function () {
             return view('dashboard.admins.index');

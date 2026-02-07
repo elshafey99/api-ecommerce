@@ -31,5 +31,5 @@ return [
     'tags'             => 'Manage Tags',
     'chats'            => 'Manage Chats',
     'locations'        => 'Manage Locations',
-
+    'branches'         => 'Manage Branches',
 ];
