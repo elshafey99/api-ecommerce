@@ -31,8 +31,5 @@ return [
     'tags'             => 'Manage Tags',
     'chats'            => 'Manage Chats',
     'locations'        => 'Manage Locations',
-    'subscription-plans' => 'Manage Subscription Plans',
-    'properties'       => 'Manage Properties',
-    'buildings'        => 'Manage Buildings',
-    'property-roles'   => 'Manage Property Roles',
+
 ];

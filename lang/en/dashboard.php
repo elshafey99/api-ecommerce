@@ -468,4 +468,19 @@ return [
     'download' => 'Download',
     'preview_not_available' => 'Preview not available for this file type',
     'file_not_found' => 'File not found',
+
+    // Brands
+    'slug_auto_generated' => 'Slug is auto-generated from English name',
+    'sort_order' => 'Sort Order',
+    'cannot_delete_brand' => 'Cannot Delete Brand',
+    'brand_has_products' => 'This brand has products and cannot be deleted',
+
+    // Categories
+    'cannot_delete_category' => 'Cannot Delete Category',
+    'category_has_products' => 'This category has products and cannot be deleted',
+    'category_has_children' => 'This category has child categories and cannot be deleted',
+    'children_count' => 'Children Count',
+    'cannot_set_self_as_parent' => 'Cannot set category as parent of itself',
+    'description-ar' => 'Description In Arabic',
+    'description-en' => 'Description In English',
 ];

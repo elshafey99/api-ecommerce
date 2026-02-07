@@ -45,6 +45,28 @@
                 </li>
             @endcan
 
+            @can('brands')
+                <li class="nav-item @yield('brands-active')">
+                    <a class="d-flex align-items-center" href="{{ route('dashboard.brands.index') }}">
+                        <i data-feather='award'></i>
+                        <span class="menu-title text-truncate">{{ __('dashboard.brands') }}</span>
+                        <span
+                            class="badge badge-light-info rounded-pill ms-auto me-1">{{ App\Models\Brand::count() }}</span>
+                    </a>
+                </li>
+            @endcan
+
+            @can('categories')
+                <li class="nav-item @yield('categories-active')">
+                    <a class="d-flex align-items-center" href="{{ route('dashboard.categories.index') }}">
+                        <i data-feather='folder'></i>
+                        <span class="menu-title text-truncate">{{ __('dashboard.categories') }}</span>
+                        <span
+                            class="badge badge-light-success rounded-pill ms-auto me-1">{{ App\Models\Category::count() }}</span>
+                    </a>
+                </li>
+            @endcan
+
             {{-- @can('users')
                 <li class="nav-item @yield('users-open') @yield('createUser-open')"><a class="d-flex align-items-center"
                         href="#"><i data-feather='users'></i><span class="menu-title text-truncate">

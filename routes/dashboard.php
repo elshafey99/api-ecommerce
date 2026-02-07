@@ -59,6 +59,18 @@ Route::group([
         })->middleware('can:roles')->name('roles.index');
         ############################### End Role Routes ############################################
 
+        ############################### Brands Routes ############################################
+        Route::get('brands', function () {
+            return view('dashboard.brands.index');
+        })->middleware('can:brands')->name('brands.index');
+        ############################### End Brands Routes ############################################
+
+        ############################### Categories Routes ############################################
+        Route::get('categories', function () {
+            return view('dashboard.categories.index');
+        })->middleware('can:categories')->name('categories.index');
+        ############################### End Categories Routes ############################################
+
         ############################### Admin Routes ############################################
         Route::get('admins', function () {
             return view('dashboard.admins.index');
@@ -71,15 +83,15 @@ Route::group([
         // ############################### End Users Routes #########################################
 
         ############################### Locations Routes ############################################
-        Route::get('locations', function () {
-            return view('dashboard.locations.countries.index');
-        })->name('locations.index');
-        Route::get('governorates', function () {
-            return view('dashboard.locations.governorates.index');
-        })->name('governorates.index');
-        Route::get('governorate-centers', function () {
-            return view('dashboard.locations.center-governorate.index');
-        })->name('centers.index');
+        // Route::get('locations', function () {
+        //     return view('dashboard.locations.countries.index');
+        // })->name('locations.index');
+        // Route::get('governorates', function () {
+        //     return view('dashboard.locations.governorates.index');
+        // })->name('governorates.index');
+        // Route::get('governorate-centers', function () {
+        //     return view('dashboard.locations.center-governorate.index');
+        // })->name('centers.index');
         ############################### End Locations Routes ############################################ 
 
         ############################### settings Routes ############################################

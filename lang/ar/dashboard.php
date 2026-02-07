@@ -472,4 +472,19 @@ return [
     'download' => 'تحميل',
     'preview_not_available' => 'المعاينة غير متاحة لهذا النوع من الملفات',
     'file_not_found' => 'الملف غير موجود',
+
+    // Brands
+    'slug_auto_generated' => 'يتم إنشاء الـ Slug تلقائياً من الاسم الإنجليزي',
+    'sort_order' => 'الترتيب',
+    'cannot_delete_brand' => 'لا يمكن حذف العلامة التجارية',
+    'brand_has_products' => 'هذه العلامة التجارية مرتبطة بمنتجات ولا يمكن حذفها',
+
+    // Categories
+    'cannot_delete_category' => 'لا يمكن حذف القسم',
+    'category_has_products' => 'هذا القسم مرتبط بمنتجات ولا يمكن حذفه',
+    'category_has_children' => 'هذا القسم يحتوي على أقسام فرعية ولا يمكن حذفه',
+    'children_count' => 'عدد الأقسام الفرعية',
+    'cannot_set_self_as_parent' => 'لا يمكن تعيين القسم كوالد لنفسه',
+    'description-ar' => 'الوصف بالعربية',
+    'description-en' => 'الوصف بالانجليزية',
 ];
