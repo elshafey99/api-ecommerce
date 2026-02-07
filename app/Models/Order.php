@@ -143,6 +143,14 @@ class Order extends Model
     }
 
     /**
+     * Get the reviews for the order.
+     */
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
+
+    /**
      * Check if order is cancellable.
      */
     public function getIsCancellableAttribute()

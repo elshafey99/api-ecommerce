@@ -138,8 +138,40 @@ class Product extends Model
     {
         return $query->where(function ($q) {
             $q->where('track_stock', false)
-              ->orWhere('stock_quantity', '>', 0);
+                ->orWhere('stock_quantity', '>', 0);
         });
+    }
+
+    /**
+     * Get the reviews for the product.
+     */
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
+
+    /**
+     * Get approved reviews for the product.
+     */
+    public function approvedReviews()
+    {
+        return $this->hasMany(Review::class)->where('is_approved', true);
+    }
+
+    /**
+     * Get average rating for the product.
+     */
+    public function getAverageRatingAttribute()
+    {
+        return $this->approvedReviews()->avg('rating') ?? 0;
+    }
+
+    /**
+     * Get reviews count for the product.
+     */
+    public function getReviewsCountAttribute()
+    {
+        return $this->approvedReviews()->count();
     }
 
     /**
