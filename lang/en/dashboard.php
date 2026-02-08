@@ -593,4 +593,18 @@ return [
     'faq_shipping' => 'Shipping & Delivery',
     'faq_payment' => 'Payment',
     'faq_returns' => 'Returns',
+
+    // Pages
+    'pages' => 'Pages',
+    'page' => 'Page',
+    'create-page' => 'Add Page',
+    'update-page' => 'Update Page',
+    'title-ar' => 'Title (Arabic)',
+    'title-en' => 'Title (English)',
+    'content-ar' => 'Content (Arabic)',
+    'content-en' => 'Content (English)',
+    'meta_title-ar' => 'SEO Title (Arabic)',
+    'meta_title-en' => 'SEO Title (English)',
+    'meta_description-ar' => 'SEO Description (Arabic)',
+    'meta_description-en' => 'SEO Description (English)',
 ];

@@ -101,6 +101,12 @@ Route::group([
         })->middleware('can:faqs')->name('faqs.index');
         ############################### End FAQs Routes ############################################
 
+        ############################### Pages Routes ############################################
+        Route::get('pages', function () {
+            return view('dashboard.pages.index');
+        })->middleware('can:pages')->name('pages.index');
+        ############################### End Pages Routes ############################################
+
 
         ############################### Admin Routes ############################################
         Route::get('admins', function () {

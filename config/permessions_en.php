@@ -33,5 +33,6 @@ return [
     'locations'        => 'Manage Locations',
     'branches'         => 'Manage Branches',
     'payment_methods'  => 'Manage Payment Methods',
+    'pages'            => 'Manage Pages',
 
 ];

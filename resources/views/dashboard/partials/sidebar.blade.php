@@ -123,6 +123,17 @@
                 </li>
             @endcan
 
+            @can('pages')
+                <li class="nav-item @yield('pages-active')">
+                    <a class="d-flex align-items-center" href="{{ route('dashboard.pages.index') }}">
+                        <i data-feather='file-text'></i>
+                        <span class="menu-title text-truncate">{{ __('dashboard.pages') }}</span>
+                        <span
+                            class="badge badge-light-info rounded-pill ms-auto me-1">{{ App\Models\Page::count() }}</span>
+                    </a>
+                </li>
+            @endcan
+
 
 
             {{-- @can('users')

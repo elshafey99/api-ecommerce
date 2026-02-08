@@ -598,4 +598,18 @@ return [
     'faq_shipping' => 'الشحن والتوصيل',
     'faq_payment' => 'الدفع',
     'faq_returns' => 'الاسترجاع',
+
+    // Pages
+    'pages' => 'الصفحات',
+    'page' => 'صفحة',
+    'create-page' => 'إضافة صفحة',
+    'update-page' => 'تعديل الصفحة',
+    'title-ar' => 'العنوان بالعربية',
+    'title-en' => 'العنوان بالإنجليزية',
+    'content-ar' => 'المحتوى بالعربية',
+    'content-en' => 'المحتوى بالإنجليزية',
+    'meta_title-ar' => 'عنوان SEO بالعربية',
+    'meta_title-en' => 'عنوان SEO بالإنجليزية',
+    'meta_description-ar' => 'وصف SEO بالعربية',
+    'meta_description-en' => 'وصف SEO بالإنجليزية',
 ];

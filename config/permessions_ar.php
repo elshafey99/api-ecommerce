@@ -33,5 +33,6 @@ return [
     'locations'       => 'ادارة المواقع',
     'branches'        => 'ادارة الفروع',
     'payment_methods' => 'ادارة طرق الدفع',
+    'pages'           => 'اداره الصفحات',
 
 ];
