@@ -101,6 +101,28 @@
                 </li>
             @endcan
 
+            @can('banners')
+                <li class="nav-item @yield('banners-active')">
+                    <a class="d-flex align-items-center" href="{{ route('dashboard.banners.index') }}">
+                        <i data-feather='image'></i>
+                        <span class="menu-title text-truncate">{{ __('dashboard.banners') }}</span>
+                        <span
+                            class="badge badge-light-success rounded-pill ms-auto me-1">{{ App\Models\Banner::count() }}</span>
+                    </a>
+                </li>
+            @endcan
+
+            @can('faqs')
+                <li class="nav-item @yield('faqs-active')">
+                    <a class="d-flex align-items-center" href="{{ route('dashboard.faqs.index') }}">
+                        <i data-feather='help-circle'></i>
+                        <span class="menu-title text-truncate">{{ __('dashboard.faqs') }}</span>
+                        <span
+                            class="badge badge-light-warning rounded-pill ms-auto me-1">{{ App\Models\Faq::count() }}</span>
+                    </a>
+                </li>
+            @endcan
+
 
 
             {{-- @can('users')

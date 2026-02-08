@@ -24,6 +24,8 @@ class DatabaseSeeder extends Seeder
             PageSeeder::class,
             BranchSeeder::class,
             ProductSeeder::class,
+            BannerSeeder::class,
+            FaqSeeder::class,
         ]);
     }
 }

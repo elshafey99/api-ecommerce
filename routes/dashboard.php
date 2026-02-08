@@ -89,6 +89,19 @@ Route::group([
         })->middleware('can:products')->name('products.index');
         ############################### End Products Routes ############################################
 
+        ############################### Banners Routes ############################################
+        Route::get('banners', function () {
+            return view('dashboard.banners.index');
+        })->middleware('can:banners')->name('banners.index');
+        ############################### End Banners Routes ############################################
+
+        ############################### FAQs Routes ############################################
+        Route::get('faqs', function () {
+            return view('dashboard.faqs.index');
+        })->middleware('can:faqs')->name('faqs.index');
+        ############################### End FAQs Routes ############################################
+
+
         ############################### Admin Routes ############################################
         Route::get('admins', function () {
             return view('dashboard.admins.index');
