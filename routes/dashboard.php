@@ -77,6 +77,18 @@ Route::group([
         })->middleware('can:branches')->name('branches.index');
         ############################### End Branches Routes ############################################
 
+        ############################### Payment Methods Routes ############################################
+        Route::get('payment-methods', function () {
+            return view('dashboard.paymentmethods.index');
+        })->middleware('can:payment_methods')->name('payment-methods.index');
+        ############################### End Payment Methods Routes ############################################
+
+        ############################### Products Routes ############################################
+        Route::get('products', function () {
+            return view('dashboard.products.index');
+        })->middleware('can:products')->name('products.index');
+        ############################### End Products Routes ############################################
+
         ############################### Admin Routes ############################################
         Route::get('admins', function () {
             return view('dashboard.admins.index');

@@ -32,4 +32,6 @@ return [
     'chats'            => 'Manage Chats',
     'locations'        => 'Manage Locations',
     'branches'         => 'Manage Branches',
+    'payment_methods'  => 'Manage Payment Methods',
+
 ];

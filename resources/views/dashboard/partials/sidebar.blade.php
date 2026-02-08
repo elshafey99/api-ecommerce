@@ -78,6 +78,29 @@
                 </li>
             @endcan
 
+            @can('payment_methods')
+                <li class="nav-item">
+                    <a class="d-flex align-items-center @yield('paymentmethods-active')"
+                        href="{{ route('dashboard.payment-methods.index') }}">
+                        <i data-feather='credit-card'></i>
+                        <span class="menu-title text-truncate">{{ __('dashboard.payment_methods') }}</span>
+                        <span
+                            class="badge badge-light-info rounded-pill ms-auto me-1">{{ App\Models\PaymentMethod::count() }}</span>
+                    </a>
+                </li>
+            @endcan
+
+            @can('products')
+                <li class="nav-item">
+                    <a class="d-flex align-items-center @yield('products-active')" href="{{ route('dashboard.products.index') }}">
+                        <i data-feather='package'></i>
+                        <span class="menu-title text-truncate">{{ __('dashboard.products') }}</span>
+                        <span
+                            class="badge badge-light-primary rounded-pill ms-auto me-1">{{ App\Models\Product::count() }}</span>
+                    </a>
+                </li>
+            @endcan
+
 
 
             {{-- @can('users')
