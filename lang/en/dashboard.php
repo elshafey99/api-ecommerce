@@ -626,4 +626,15 @@ return [
     'meta_title-en' => 'SEO Title (English)',
     'meta_description-ar' => 'SEO Description (Arabic)',
     'meta_description-en' => 'SEO Description (English)',
+
+    // Reviews
+    'reviews' => 'Reviews',
+    'review' => 'Review',
+    'all' => 'All',
+    'approved' => 'Approved',
+    'pending' => 'Pending',
+    'rating' => 'Rating',
+    'date' => 'Date',
+    'no-user' => 'No User',
+    'no-product' => 'No Product',
 ];

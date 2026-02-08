@@ -631,4 +631,15 @@ return [
     'meta_title-en' => 'عنوان SEO بالإنجليزية',
     'meta_description-ar' => 'وصف SEO بالعربية',
     'meta_description-en' => 'وصف SEO بالإنجليزية',
+
+    // Reviews
+    'reviews' => 'التقييمات',
+    'review' => 'تقييم',
+    'all' => 'الكل',
+    'approved' => 'معتمد',
+    'pending' => 'قيد الانتظار',
+    'rating' => 'التقييم',
+    'date' => 'التاريخ',
+    'no-user' => 'لا يوجد مستخدم',
+    'no-product' => 'لا يوجد منتج',
 ];

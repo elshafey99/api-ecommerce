@@ -101,6 +101,12 @@ Route::group([
         })->middleware('can:faqs')->name('faqs.index');
         ############################### End FAQs Routes ############################################
 
+        ############################### Reviews Routes ############################################
+        Route::get('reviews', function () {
+            return view('dashboard.reviews.index');
+        })->middleware('can:reviews')->name('reviews.index');
+        ############################### End Reviews Routes ############################################
+
         ############################### Pages Routes ############################################
         Route::get('pages', function () {
             return view('dashboard.pages.index');

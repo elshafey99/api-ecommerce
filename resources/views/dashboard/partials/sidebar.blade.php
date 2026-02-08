@@ -145,6 +145,17 @@
                 </li>
             @endcan
 
+            @can('reviews')
+                <li class="nav-item @yield('reviews-active')">
+                    <a class="d-flex align-items-center" href="{{ route('dashboard.reviews.index') }}">
+                        <i data-feather='star'></i>
+                        <span class="menu-title text-truncate">{{ __('dashboard.reviews') }}</span>
+                        <span
+                            class="badge badge-light-primary rounded-pill ms-auto me-1">{{ App\Models\Review::count() }}</span>
+                    </a>
+                </li>
+            @endcan
+
 
 
             {{-- @can('users')
