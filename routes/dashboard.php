@@ -107,6 +107,12 @@ Route::group([
         })->middleware('can:pages')->name('pages.index');
         ############################### End Pages Routes ############################################
 
+        ############################### Coupons Routes ############################################
+        Route::get('coupons', function () {
+            return view('dashboard.coupons.index');
+        })->middleware('can:coupons')->name('coupons.index');
+        ############################### End Coupons Routes ############################################
+
 
         ############################### Admin Routes ############################################
         Route::get('admins', function () {
